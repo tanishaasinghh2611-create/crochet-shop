@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our handmade crochet collection. Beautiful flowers, bouquets, keychains, soft toys, scarfs and more.">
+    <meta name="theme-color" content="#FF7043">
+
+    <title>Shop — [YOUR BUSINESS NAME] 🧶</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧶</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER (Sticky)                              -->
+    <!-- ============================================ -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="site-logo">
+                <span class="logo-brand">🧶 <span>[YOUR BUSINESS NAME]</span></span>
+                <span class="logo-tagline">Handmade with love</span>
+            </a>
+
+            <nav class="nav-menu" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="category.html?cat=flowers" class="nav-link">Flowers</a></li>
+                    <li><a href="category.html?cat=bouquets" class="nav-link">Bouquets</a></li>
+                    <li><a href="category.html?cat=keychains" class="nav-link">Keychains</a></li>
+                    <li><a href="category.html?cat=softtoys" class="nav-link">Soft Toys</a></li>
+                    <li><a href="category.html?cat=scarfs" class="nav-link">Scarfs</a></li>
+                    <li><a href="category.html?cat=special" class="nav-link">Special</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="header-icon-btn whatsapp-quick" onclick="openWhatsAppChat(); return false;" aria-label="Chat on WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+                <button class="hamburger-btn" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo-brand" style="font-size:1.6rem;">🧶 [YOUR BUSINESS NAME]</span>
+            <button class="drawer-close-btn" id="drawer-close" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="mobile-nav-list">
+            <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+            <a href="category.html?cat=flowers" class="mobile-nav-link">🌸 Flowers <span>→</span></a>
+            <a href="category.html?cat=bouquets" class="mobile-nav-link">💐 Bouquets <span>→</span></a>
+            <a href="category.html?cat=keychains" class="mobile-nav-link">✨ Keychains <span>→</span></a>
+            <a href="category.html?cat=softtoys" class="mobile-nav-link">🧸 Soft Toys <span>→</span></a>
+            <a href="category.html?cat=scarfs" class="mobile-nav-link">🧣 Scarfs <span>→</span></a>
+            <a href="category.html?cat=special" class="mobile-nav-link">🎀 Special <span>→</span></a>
+        </nav>
+        <div class="drawer-footer">
+            <a href="#" class="btn btn-whatsapp" onclick="openWhatsAppChat(); return false;" style="width:100%;">
+                💬 Chat on WhatsApp
+            </a>
+        </div>
+    </aside>
+
+    <!-- ============================================ -->
+    <!-- CATEGORY PAGE CONTENT                        -->
+    <!-- ============================================ -->
+    <div class="category-page-header">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-sep">›</span>
+                <span class="breadcrumbs-current" id="breadcrumb-category">All Products</span>
+            </nav>
+
+            <span class="category-banner-icon" id="category-banner-icon" style="font-size:2.5rem; display:block; margin-bottom:0.5rem;">🧶</span>
+            <h1 class="section-title" id="category-title">All Products</h1>
+            <p class="section-subtitle" id="category-description">Browse our beautiful handmade crochet collection</p>
+        </div>
+    </div>
+
+    <section class="section" style="padding-top: 1.5rem;">
+        <div class="container">
+            <!-- Filters & Sort -->
+            <div class="filter-bar fade-in">
+                <div class="filter-controls">
+                    <span class="filter-count" id="product-count"></span>
+                    <select class="sort-select" id="sort-select" aria-label="Sort products">
+                        <option value="default">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                        <option value="name-asc">Name: A → Z</option>
+                        <option value="name-desc">Name: Z → A</option>
+                    </select>
+                </div>
+                <div style="position:relative; flex:1; min-width:200px;">
+                    <input type="text" id="search-input" placeholder="🔍 Search products..." aria-label="Search products" style="width:100%; padding:0.55rem 1rem; border-radius:var(--radius-pill); border:1px solid var(--color-border-soft); background:var(--color-cream); font-size:0.85rem;">
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <span class="logo-brand">🧶 <span>[YOUR BUSINESS NAME]</span></span>
+                    <p>Handmade crochet creations crafted with love and premium yarn. Each piece tells a story.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon-btn" onclick="openWhatsAppChat(); return false;" aria-label="WhatsApp">💬</a>
+                        <a href="https://instagram.com/yourbusinessname" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">📸</a>
+                        <a href="mailto:hello@yourbusiness.com" class="social-icon-btn" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html?cat=flowers">Flowers</a></li>
+                        <li><a href="category.html?cat=bouquets">Bouquets</a></li>
+                        <li><a href="category.html?cat=keychains">Keychains</a></li>
+                        <li><a href="category.html?cat=softtoys">Soft Toys</a></li>
+                        <li><a href="category.html?cat=special">Special</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>We Promise</h4>
+                    <ul class="footer-links-list">
+                        <li>✅ 100% Handmade</li>
+                        <li>✅ Premium Quality Yarn</li>
+                        <li>✅ Custom Orders Welcome</li>
+                        <li>✅ Free Gift Wrapping</li>
+                        <li>✅ Made with Love 💕</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 [YOUR BUSINESS NAME]. All rights reserved. Made with 💕 and 🧶</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="floating-whatsapp" onclick="openWhatsAppChat(); return false;" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-chat-bubble">Chat with us!</span>
+        <span class="floating-whatsapp-btn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
